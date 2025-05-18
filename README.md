@@ -72,3 +72,65 @@ Applied using Window.orderBy() to demonstrate row-level analytical operations.
 Creating temporary views
 
 Running SQL queries using spark.sql()
+
+# Flow Diagram outline for your BigMart Sales Data PySpark
++------------------+
+|  Data Ingestion   | 
+|  - Read CSV      |
+|  - Define Schema |
++--------+---------+
+         |
+         v
++------------------+
+|  Data Exploration |
+|  - show()        |
+|  - printSchema() |
++--------+---------+
+         |
+         v
++-------------------------+
+|  Data Transformations    |
+|  - Filter, Rename        |
+|  - New Columns, Cast     |
+|  - Sort, Drop Duplicates |
++--------+----------------+
+         |
+         v
++-------------------+
+|  Data Combination |
+|  - Union, UnionByName |
++--------+----------+
+         |
+         v
++----------------------+
+| Handling Missing Data |
+|  - dropna()          |
+|  - Null Filtering    |
++--------+-------------+
+         |
+         v
++------------------------+
+| Grouping & Aggregations |
+|  - groupBy(), sum(), avg() |
++--------+----------------+
+         |
+         v
++-------------------+
+|       Joins       |
+|  - Inner, Left, Right |
++--------+----------+
+         |
+         v
++------------------+
+|  Window Functions |
+|  - row_number()   |
+|  - rank(), dense_rank() |
++--------+---------+
+         |
+         v
++-------------------+
+|    Spark SQL      |
+|  - Temp Views     |
+|  - SQL Queries    |
++-------------------+
+
