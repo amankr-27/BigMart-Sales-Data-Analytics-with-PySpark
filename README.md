@@ -1,4 +1,4 @@
-# 🧪 PySpark Practice on BigMart Sales Data
+# 🧪 BigMart Sales Data Analytics with PySpark
 This project is a comprehensive hands-on practice notebook using PySpark on the BigMart Sales dataset, focused on learning and demonstrating essential data manipulation, transformation, and analysis techniques in a distributed environment.
 
 # 📁 File: Pyspark_Practise.py
